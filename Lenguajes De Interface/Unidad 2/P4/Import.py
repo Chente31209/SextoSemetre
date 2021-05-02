@@ -13,5 +13,10 @@ except ImportError:
     print "Nesitas python 3 para correr esto "
     """
 
-V = Viwe()
-V.VIEW()
+
+"""V = Viwe()
+V.VIEW()"""
+
+print  (7 ^ 5)
+print  (7 and 5)
+print  (7 or 5)

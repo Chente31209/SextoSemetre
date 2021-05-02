@@ -348,3 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/Graficacion/JavaFXSwingApplication1/nbproject/private/
+/Graficacion/JavaFXSwingApplication1/dist/
+/Graficacion/JavaFXSwingApplication1/build/

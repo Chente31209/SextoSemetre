@@ -1,4 +1,4 @@
-import Tkinter as tk 
+import tkinter as tk 
 from Modulos.Fucioes import *
 
 def btnComprar():
