@@ -1,4 +1,4 @@
-import Tkinter as tk 
+import tkinter as tk 
 from Modulos.Fucioes import *
 def btnAcion():
     Plabra = ""
@@ -19,7 +19,7 @@ def btnAcion():
 root = tk.Tk()
 txtNumeroMayor = tk.Entry(root)
 txtNumeroMenor = tk.Entry(root)
-btnSusecion =tk.Button(root, text="Secuencia ñ", command= btnAcion)
+btnSusecion =tk.Button(root, text="Secuencia", command= btnAcion)
 RsultadoN=tk.Label(root)
 RsultadoI=tk.Label(root)
 txtNumeroMayor.pack()
