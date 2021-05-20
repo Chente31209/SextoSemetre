@@ -1,7 +1,9 @@
 import tkinter as tk
 from Controles.LoginControler import *
-from Viwes.LoginViwe import *
+from Viwes.index import *
 from Modules.Userobjet import *
+from Viwes.app import *
+
 class Login:
     def __init__(self,root):
         self.root=root
@@ -9,7 +11,7 @@ class Login:
         frame = tk.Frame(self.root) 
         txtUsuario = tk.Label(frame , text="Usario")
         iptUsuario = tk.Entry(frame)
-        btnEtar= tk.Button(frame,text="Entar", width=10,height=1, command= lambda: Login.onBtnEntar(iptPasword,iptUsuario))
+        btnEtar= tk.Button(frame,text="Entar", width=10,height=1, command= lambda: onBtnEntar(iptPasword,iptUsuario,frame))
 
         txtPasword = tk.Label(frame , text="Paswoed")
         iptPasword = tk.Entry(frame, show="*")
@@ -20,7 +22,14 @@ class Login:
         iptPasword.grid(padx=5,row=2 , column=2)
         btnEtar.grid(padx=5, row=3, column=1)
         return frame
-    def onBtnEntar(iptPasword,iptUsuario):
-        varPasword=iptPasword.get()
-        varUario=iptUsuario.get()
-        print(AhutUser.Ahout(varUario,varPasword))
+def onBtnEntar(iptPasword,iptUsuario,frame):
+    
+    varPasword=iptPasword.get()
+    varUario=iptUsuario.get()
+    varAhut= AhutUser.Ahout(varUario,varPasword)
+    if(varAhut):
+        frame.destroy()
+        
+        App=app()
+        App.App()
+

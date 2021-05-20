@@ -9,17 +9,17 @@ def btnComprar():
 class Windou :
     def TkWindoy(self,Dimenciones="300x300"):
         root = tk.Tk()
-        LibNuero1= tk.Label(root, text="Nuemero 1")
+        LibNuero1= tk.Label(root, text="Número 1")
         txtNuemro1 = tk.Entry(root)
-        LibNuero2= tk.Label(root, text="Nuemero 2")
+        LibNuero2= tk.Label(root, text="Número 2")
         txtNuemro2 = tk.Entry(root)
         btnComparar= tk.Button(root,text="Comprar", command=btnComprar)
         btnSalir= tk.Button(root,text="Salir", command = quit)
         LibNuero1M = tk.Label(root, text="Numero Mayor")
         LibNuero2M = tk.Label(root, text="Numero Menor")
 
-        RM1= tk.Label(root, text="Numero Mayor")
-        RM2= tk.Label(root, text="Numero Menor")
+        RM1= tk.Label(root, text="Número Mayor")
+        RM2= tk.Label(root, text="Número Menor")
 
         LibNuero1.grid(row=1 , column=1)
         LibNuero2.grid(row=2 , column=1)
