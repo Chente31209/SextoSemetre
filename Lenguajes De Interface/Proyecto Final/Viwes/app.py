@@ -1,7 +1,7 @@
 import tkinter as tk
-from Viwes.Compnetes import HeaderComponet
 from Viwes.Compnetes.HeaderComponet import *
 from Viwes.ClienteViwe import *
+from Viwes.DispocitivoViwe import *
 class app:
     def __init__(self):
         self.root=tk.Tk()
@@ -10,7 +10,8 @@ class app:
         
     def App(self):
         CV=ClienteViwe(self.FrameBody)
-        HC=HaderApp(self.FrameHead,CV)
+        CD=DispocitivoViwe(self.FrameBody)
+        HC=HaderApp(self.FrameHead,CV,CD)
         HC.AppInit().pack()
         self.FrameHead.config(bg="lightblue")
         self.FrameHead.config(bd=25)

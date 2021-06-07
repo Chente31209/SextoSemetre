@@ -1,8 +1,8 @@
-from Data.UsariosData import *
+from Data.MysqlData.UsariosDataSql import *
 
 class AhutUser:
     def Ahout(User,pasword):
-        db=UsersData.TodosLosUsarios()
+        db=UsariosSql().Get("SELECT * FROM usarios")
         for users in db:
             if(users["Usario"]==User):
                 if(users["Pasword"]==pasword):
